@@ -22,3 +22,10 @@ Successful URL responses should have a 200 code. Ensure that you include error c
 ## License
 
 [License](LICENSE.txt)
+
+##Deploying using eb cli successfully:
+![image](https://github.com/longbui98/First-Fullstack-AWS/assets/39556130/ee595ed6-79d9-4c0c-aca9-8f99da3afdf5)
+
+##BeanStalk URL after deploying successully:
+![image](https://github.com/longbui98/First-Fullstack-AWS/assets/39556130/1d420e1c-7433-4e9d-86bd-31df09c4445b)
+
