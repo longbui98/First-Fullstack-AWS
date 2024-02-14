@@ -34,7 +34,7 @@ import validUrl from 'valid-url';
         files.push(data); 
       })
       res.status(200).sendFile(data); 
-      await deleteLocalFiles(files);
+      deleteLocalFiles(files);
     }else{
       console.error('Image URL is not valid', image_url);
       res.status(400).send('Image URL is not valid')
