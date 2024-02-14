@@ -31,10 +31,10 @@ import validUrl from 'valid-url';
       await filterImageFromURL(image_url)
       .then(fileResult => {
         data = fileResult;
+        res.status(200).sendFile(data); 
         files.push(data); 
       })
-      res.status(200).sendFile(data); 
-      deleteLocalFiles(files);
+      .then(deleteLocalFiles(files));
     }else{
       console.error('Image URL is not valid', image_url);
       res.status(400).send('Image URL is not valid')
